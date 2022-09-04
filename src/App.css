@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap');
+
+*{
+  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+body{
+  background: rgb(20,14,130);
+background: linear-gradient(142deg, rgba(45,38,180,1) 0%, rgba(41,41,125,1) 38%, rgba(0,212,255,1) 87%);
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  color:  rgba(0,212,255,1);
+  font-weight: 900;
+  padding-top: 80px;
+  font-size: 52px;
+  padding-bottom: 10px;
+}
+.search-cards{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+ 
+}
+.search-cards input{
+
+  border: 5px solid rgba(0,212,255,1);
+  border-radius: 8px;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  height: 52px;
+  width: 50%;
+ 
+  
+}
+.search-cards input:focus{
+  outline:none !important
+}
