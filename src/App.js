@@ -12,7 +12,6 @@ function App() {
     axios.get('https://jsonplaceholder.typicode.com/users')
     .then((response)=>{
       setMonster(response.data);
-      console.log(response);
     })
     .catch((error)=>{
       console.log("Error coming.......!!!!!!!");
@@ -21,7 +20,7 @@ function App() {
   };
   const handleSearch=(event)=>{
     setSearch(event.target.value.toLowerCase());
-    console.log(event.target.value);
+    
   }
   const filteredMonsters=monster.filter(monster=>
     monster.name.toLowerCase().includes(search.toLocaleLowerCase())
@@ -47,9 +46,9 @@ function App() {
               {
                   filteredMonsters.map((monster)=>{
                     return(
-                        <div className='col-6 col-lg-4 col-xl-3'>
+                        
                           <Cards key={monster.id} id={monster.id} name={monster.name} username={monster.username} mail={monster.email} />
-                        </div>  
+                         
                   )})
               }  
           </div>
