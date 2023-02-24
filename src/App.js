@@ -8,7 +8,7 @@ function App() {
   const [search,setSearch]=useState('');
   
   const getUsers=()=>{
-    console.log("Hello Darling.:::");
+    
     axios.get('https://jsonplaceholder.typicode.com/users')
     .then((response)=>{
       setMonster(response.data);
